@@ -1,0 +1,33 @@
+
+
+.cardd{
+    flex: 1 1 auto;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    margin-bottom: 1%;
+}
+
+.cardd.top {
+    border-bottom: 5px solid  #1DB89C;
+  }
+  
+  .cardd.flop {
+    border-bottom: 5px solid #BE1622;
+  }
+
+  .postTitle,
+  .postRating {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: center;
+    align-self: center;
+  }
+
+  
+
+  

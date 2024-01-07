@@ -1,0 +1,25 @@
+mat-sidenav {
+  width: 20vw;
+}
+
+mat-sidenav-content {
+  width: 80vw;
+  padding: 1% 0;
+  height: 100vh;
+}
+
+.cardsContainer {
+  display: block;
+  height:fit-content;
+  width: 100%; /* Make sure the container takes the full width of its parent */
+  
+}
+
+  .chartContainer {
+    width: 100%;
+    min-height: 80vh;
+    height: auto;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: rgb(255, 255, 255);
+    padding: 1%;
+  }

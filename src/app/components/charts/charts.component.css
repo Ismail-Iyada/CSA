@@ -1,0 +1,8 @@
+.barChart,
+.pieChart{
+
+    margin: 20px auto;
+    height: fit-content;
+    width: fit-content;
+}
+

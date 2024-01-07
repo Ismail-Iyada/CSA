@@ -1,0 +1,10 @@
+<mat-card class="cardd " [ngClass]="postType">
+  <span class="icon-container">
+    <fa-icon
+      [icon]="postType === 'top' ? faAnglesUp : faAnglesDown"
+      [ngStyle]="{ color: postType === 'top' ? ' #1DB89C' : '#BE1622' }"
+    ></fa-icon>
+  </span>
+  <h3 class="postTitle">{{ postTitle }}</h3>
+  <p class="postRating">{{ postRating }}</p>
+</mat-card>

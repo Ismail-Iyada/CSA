@@ -1,0 +1,22 @@
+/* Add any custom CSS styles you want to apply to the component */
+.close-icon {
+    position: absolute;
+    right: 35px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    padding: 10px;
+    color: #757575;
+  }
+  
+  .close-icon:hover {
+    color: #ffffff; /* Change the color when hovering */
+    background-color: #757575; /* Change the background color when hovering */
+  }
+  
+  .serviceSelect{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }

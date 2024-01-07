@@ -1,0 +1,19 @@
+<div class="serviceSelect">
+    <mat-form-field appearance="fill" style="min-width: 75%">
+      <mat-label>Select a service</mat-label>
+      <mat-select [(value)]="selectedData" (selectionChange)="handleChange($event)">
+        <mat-option *ngFor="let item of data" [value]="item.nameAr">
+          {{ item.nameAr }}
+        </mat-option>
+      </mat-select>
+  
+      <!-- Font Awesome icon -->
+      <fa-icon
+        *ngIf="selectedData"
+        [icon]="faTimes"
+        (click)="clearSelection()"
+        class="close-icon"
+      ></fa-icon>
+    </mat-form-field>
+  </div>
+  
