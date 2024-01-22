@@ -1,9 +1,8 @@
 /* Add any custom CSS styles you want to apply to the component */
 .close-icon {
     position: absolute;
-    right: 35px;
-    top: 50%;
-    transform: translateY(-50%);
+    right:35px;
+    top: 5.5px;
     cursor: pointer;
     padding: 10px;
     color: #757575;
@@ -15,8 +14,13 @@
   }
   
   .serviceSelect{
+    margin: 0 auto;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 90%;
   }
+mat-form-field{
+  min-width: 100%
+}

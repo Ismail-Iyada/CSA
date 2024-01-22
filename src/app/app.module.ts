@@ -28,6 +28,7 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
 import {ChartsComponent} from './components/charts/charts.component'
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { FormsModule } from '@angular/forms';
+import { SelectServiceService } from './services/select-service.service';
 
 @NgModule({
   declarations: [AppComponent, SelectServiceComponent, ChartsComponent, CardsComponent,],
@@ -58,7 +59,7 @@ import { FormsModule } from '@angular/forms';
     NgxChartsModule,
     FormsModule,
   ],
-  providers: [],
+  providers: [SelectServiceService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

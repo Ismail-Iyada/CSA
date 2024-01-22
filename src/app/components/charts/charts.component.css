@@ -6,3 +6,6 @@
     width: fit-content;
 }
 
+.chart-legend .legend-labels {
+    width: 150%;
+}

@@ -1,19 +1,20 @@
 <div class="serviceSelect">
-    <mat-form-field appearance="fill" style="min-width: 75%">
-      <mat-label>Select a service</mat-label>
-      <mat-select [(value)]="selectedData" (selectionChange)="handleChange($event)">
-        <mat-option *ngFor="let item of data" [value]="item.nameAr">
-          {{ item.nameAr }}
-        </mat-option>
-      </mat-select>
-  
-      <!-- Font Awesome icon -->
-      <fa-icon
-        *ngIf="selectedData"
-        [icon]="faTimes"
-        (click)="clearSelection()"
-        class="close-icon"
-      ></fa-icon>
-    </mat-form-field>
-  </div>
-  
+  <mat-form-field appearance="fill">
+    <mat-label>All Services</mat-label>
+    <mat-select
+      [(value)]="selectedService"
+      (selectionChange)="handleChange($event)"
+    >
+      <mat-option *ngFor="let item of servicesData" [value]="item.name">
+        {{ item.name }}
+      </mat-option>
+    </mat-select>
+    <!-- Font Awesome icon -->
+  </mat-form-field>
+  <fa-icon
+    *ngIf="selectedService"
+    [icon]="faTimes"
+    (click)="clearSelection()"
+    class="close-icon"
+  ></fa-icon>
+</div>

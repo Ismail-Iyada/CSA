@@ -1,0 +1,148 @@
+{
+  "services": [
+    {
+      "name": "Service 1",
+      "ratings": [
+        { "name": "😄", "value": 50 },
+        { "name": "🙂", "value": 20 },
+        { "name": "😑", "value": 13 },
+        { "name": "🙁", "value": 5 },
+        { "name": "☹️", "value": 5 }
+      ],
+      "reasons": [
+        { "name": "Reason 1", "value": 25 },
+        { "name": "Reason 2", "value": 30 },
+        { "name": "Reason 3", "value": 15 },
+        { "name": "Reason 4", "value": 30 }
+      ]
+    },
+    {
+      "name": "Service 2",
+      "ratings": [
+        { "name": "😄", "value": 30 },
+        { "name": "🙂", "value": 40 },
+        { "name": "😑", "value": 20 },
+        { "name": "🙁", "value": 1 },
+        { "name": "☹️", "value": 10 }
+      ],
+      "reasons": [
+        { "name": "Reason 1", "value": 35 },
+        { "name": "Reason 2", "value": 40 },
+        { "name": "Reason 3", "value": 20 },
+        { "name": "Reason 4", "value": 50 }
+      ]
+    },
+    {
+      "name": "Service 3",
+      "ratings": [
+        { "name": "😄", "value": 45 },
+        { "name": "🙂", "value": 35 },
+        { "name": "😑", "value": 15 },
+        { "name": "🙁", "value": 65 },
+        { "name": "☹️", "value": 7 }
+      ],
+      "reasons": [
+        { "name": "Reason 1", "value": 28 },
+        { "name": "Reason 2", "value": 38 },
+        { "name": "Reason 3", "value": 18 },
+        { "name": "Reason 4", "value": 48 }
+      ]
+    },
+    {
+      "name": "Service 4",
+      "ratings": [
+        { "name": "😄", "value": 55 },
+        { "name": "🙂", "value": 25 },
+        { "name": "😑", "value": 18 },
+        { "name": "🙁", "value": 7 },
+        { "name": "☹️", "value": 8 }
+      ],
+      "reasons": [
+        { "name": "Reason 1", "value": 32 },
+        { "name": "Reason 2", "value": 42 },
+        { "name": "Reason 3", "value": 22 },
+        { "name": "Reason 4", "value": 52 }
+      ]
+    },
+    {
+      "name": "Service 5",
+      "ratings": [
+        { "name": "😄", "value": 60 },
+        { "name": "🙂", "value": 30 },
+        { "name": "😑", "value": 23 },
+        { "name": "🙁", "value": 33 },
+        { "name": "☹️", "value": 12 }
+      ],
+      "reasons": [
+        { "name": "Reason 1", "value": 37 },
+        { "name": "Reason 2", "value": 47 },
+        { "name": "Reason 3", "value": 27 },
+        { "name": "Reason 4", "value": 57 }
+      ]
+    },
+    {
+      "name": "Service 6",
+      "ratings": [
+        { "name": "😄", "value": 65 },
+        { "name": "🙂", "value": 35 },
+        { "name": "😑", "value": 28 },
+        { "name": "🙁", "value": 15 },
+        { "name": "☹️", "value": 17 }
+      ],
+      "reasons": [
+        { "name": "Reason 1", "value": 42 },
+        { "name": "Reason 2", "value": 52 },
+        { "name": "Reason 3", "value": 32 },
+        { "name": "Reason 4", "value": 62 }
+      ]
+    },
+    {
+      "name": "Service 7",
+      "ratings": [
+        { "name": "😄", "value": 70 },
+        { "name": "🙂", "value": 40 },
+        { "name": "😑", "value": 33 },
+        { "name": "🙁", "value": 90 },
+        { "name": "☹️", "value": 22 }
+      ],
+      "reasons": [
+        { "name": "Reason 1", "value": 47 },
+        { "name": "Reason 2", "value": 57 },
+        { "name": "Reason 3", "value": 37 },
+        { "name": "Reason 4", "value": 67 }
+      ]
+    },
+    {
+      "name": "Service 8",
+      "ratings": [
+        { "name": "😄", "value": 75 },
+        { "name": "🙂", "value": 45 },
+        { "name": "😑", "value": 38 },
+        { "name": "🙁", "value": 9 },
+        { "name": "☹️", "value": 27 }
+      ],
+      "reasons": [
+        { "name": "Reason 1", "value": 52 },
+        { "name": "Reason 2", "value": 62 },
+        { "name": "Reason 3", "value": 42 },
+        { "name": "Reason 4", "value": 72 }
+      ]
+    },
+    {
+      "name": "Service 9",
+      "ratings": [
+        { "name": "😄", "value": 80 },
+        { "name": "🙂", "value": 50 },
+        { "name": "😑", "value": 43 },
+        { "name": "🙁", "value": 10 },
+        { "name": "☹️", "value": 32 }
+      ],
+      "reasons": [
+        { "name": "Reason 1", "value": 57 },
+        { "name": "Reason 2", "value": 67 },
+        { "name": "Reason 3", "value": 47 },
+        { "name": "Reason 4", "value": 77 }
+      ]
+    }
+  ]
+}

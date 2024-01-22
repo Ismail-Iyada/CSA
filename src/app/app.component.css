@@ -23,3 +23,12 @@ mat-sidenav-content {
     background-color: rgb(255, 255, 255);
     padding: 1%;
   }
+  @media screen and (max-width:1400px){
+    mat-sidenav[_ngcontent-ng-c3652102588]{
+        display: none;
+    }
+    mat-sidenav-content[_ngcontent-ng-c3652102588]{
+        width: 100vw;
+
+    }
+}

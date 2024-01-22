@@ -31,27 +31,16 @@ export class CardsComponent {
 
   ngOnInit(): void {
     // Call the API to fetch data
-    this.fetchData();
+    this.mockData();
   }
 
-  fetchData() {
-    // Replace 'YOUR_API_ENDPOINT' with the actual API endpoint to fetch data
-    const apiUrl = 'http://195.201.167.92:7001/api/Services/GetTopFlopService';
-
-    // Make an HTTP GET request to the API
-    this.http.get<ApiResponse>(apiUrl).subscribe(
-      (data) => {
-        if (this.postType === 'top') {
-          this.postTitle = data.topServiceName;
-          this.postRating = data.topServiceCount;
-        } else {
-          this.postTitle = data.flopServiceName;
-          this.postRating = data.flopServiceCount;
-        }
-      },
-      (error) => {
-        console.error('Error fetching data from the API:', error);
-      }
-    );
+  mockData(){
+    if (this.postType === 'top') {
+      this.postTitle = "service X";
+      this.postRating = 176;
+    } else {
+      this.postTitle = "service Y";
+      this.postRating = 12;
+    }
   }
 }

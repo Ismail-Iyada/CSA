@@ -1,8 +1,29 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { FaIconLibrary } from '@fortawesome/angular-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
+import { SelectServiceService } from 'src/app/services/select-service.service';
+import { Observable } from 'rxjs';
+
+interface RatingData {
+  name: string;
+  value: number;
+}
+
+interface ReasonsData {
+  name: string;
+  value: number;
+}
+
+interface ServiceData {
+  name: string;
+  ratings: RatingData[];
+  reasons: ReasonsData[];
+}
+
+ interface ServicesData {
+  services: ServiceData[];
+}
 
 @Component({
   selector: 'app-selectservice',
@@ -10,30 +31,46 @@ import { faTimes } from '@fortawesome/free-solid-svg-icons';
   styleUrls: ['./selectservice.component.css'],
 })
 export class SelectServiceComponent implements OnInit {
-  data: any[] = [];
-  selectedData: string = '';
+  data: ServicesData = { services: [] };
+  selectedService: any = '';
+  servicesData: any[] = []; // Adjust the data type based on your JSON structure
   
+
   // Declare the faTimes variable
   faTimes = faTimes;
 
-  constructor(private http: HttpClient, private library: FaIconLibrary) {
+  constructor(private http: HttpClient, private library: FaIconLibrary, private selectService: SelectServiceService) {
     // Add the faTimes icon to the library
     library.addIcons(faTimes);
+    // get the mock json data
+   this.selectService.getData().subscribe((data)=>{
+    this.data = data
+    this.servicesData = this.data.services    
+   })
+   
+    
   }
 
   ngOnInit(): void {
-    this.http
-      .get<any[]>('http://195.201.167.92:7001/api/Services/GetServices')
-      .subscribe((response) => {
-        this.data = response;
-      });
-  }
 
+
+  }
+  
   handleChange(event: any): void {
-    this.selectedData = event.target.value;
+    this.selectedService = event.value;
+    this.selectService.selectedService = this.selectedService
+    this.selectService.setSelectedServiceObj(this.selectedService)
+    console.log("change: ",this.selectedService); 
+    this.selectedService.getSelectedServiceObj
+
+      
   }
 
   clearSelection(): void {
-    this.selectedData = '';
+    this.selectedService = '';
+    this.selectService.selectedService = this.selectedService
+    this.selectService.setSelectedServiceObj(this.selectedService)
+    this.selectedService
+
   }
 }

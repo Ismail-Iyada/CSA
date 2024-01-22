@@ -2,13 +2,14 @@
 <div *ngIf="chartType === 'bar'" class="barChart">
   <ngx-charts-bar-vertical
     [view]="view"
-    [scheme]="colorScheme"
-    [results]="mockData"
+    [scheme]="bColorScheme"
+    [results]="barData"
     [gradient]="gradient"
     [xAxis]="showXAxis"
     [yAxis]="showYAxis"
     [legend]="showLegend"
     [legendPosition]="legendPosition"
+    [legendTitle]="'Smily'"
     [showXAxisLabel]="showXAxisLabel"
     [showYAxisLabel]="showYAxisLabel"
     [xAxisLabel]="xAxisLabel"
@@ -22,11 +23,12 @@
 <div *ngIf="chartType === 'pie'" class="pieChart">
   <ngx-charts-pie-chart
     [view]="view"
-    [scheme]="colorScheme"
-    [results]="mockData"
+    [scheme]="pColorScheme"
+    [results]="pieData"
     [gradient]="gradient"
     [legend]="showLegend"
     [legendPosition]="legendPosition"
+    [legendTitle]="'Reasons'"
     [labels]="showLabels"
     [doughnut]="isDoughnut"
   >
