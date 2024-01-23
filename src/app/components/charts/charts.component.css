@@ -1,17 +1,9 @@
 .barChart,
 .pieChart{
-    border: 2px solid black;
     width: fit-content;
     height: 275px;
     margin: 5px auto;
     text-align: left;
 }
 
-.chart-legend .legend-labels {
-    width: auto;
-}
 
-@media screen and (min-width: 768p) {
-    
-    
-}

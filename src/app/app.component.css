@@ -16,9 +16,22 @@ mat-sidenav-content {
 
   .chartContainer {
     width: 100%;
-
+    min-height: 80vh;
     height: auto;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     background-color: rgb(255, 255, 255);
     padding: 1%;
   }
+@media screen and (max-width: 768) {
+  body{
+    overflow-x: hidden;
+  }
+  mat-sidenav-content{
+    overflow-x: hidden;
+  }
+  div.col-xxl-6.my-auto {
+    padding-left: 0;
+    margin: 0;
+  }
+
+}
