@@ -10,4 +10,8 @@ import {MatIconModule} from '@angular/material/icon';
 })
 export class AppComponent {
   title = 'csa';
+  navState : string = "";
+  ngOnInit() {
+    this.navState = window.innerWidth > 768 ? 'true' : 'false';
+  }
 }

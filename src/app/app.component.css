@@ -3,7 +3,6 @@ mat-sidenav {
 }
 
 mat-sidenav-content {
-  width: 80vw;
   padding: 1% 0;
   height: 100vh;
 }
@@ -17,18 +16,9 @@ mat-sidenav-content {
 
   .chartContainer {
     width: 100%;
-    min-height: 80vh;
+
     height: auto;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     background-color: rgb(255, 255, 255);
     padding: 1%;
   }
-  @media screen and (max-width:1400px){
-    mat-sidenav[_ngcontent-ng-c3652102588]{
-        display: none;
-    }
-    mat-sidenav-content[_ngcontent-ng-c3652102588]{
-        width: 100vw;
-
-    }
-}

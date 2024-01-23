@@ -46,14 +46,15 @@ export class ChartsComponent implements OnInit {
 
   barData: any[] = [];
   pieData: any[] = [];
-  @Input() legendPosition: LegendPosition = LegendPosition.Right; // Default legend position
+  @Input() legendPosition: LegendPosition = window.innerWidth > 768 ? LegendPosition.Right : LegendPosition.Below; // Default legend position
 
   // Subscriptions to observables
   barDataSubscription!: Subscription;
   pieDataSubscription!: Subscription;
 
   // Ensure the 'view' property is of type [number, number]
-  view: [number, number] = [500, 300];
+  view: [number, number] = window.innerWidth > 768 ? [500, 300] : [300, 200];
+
 
   // bar chart options
   showXAxis = true;

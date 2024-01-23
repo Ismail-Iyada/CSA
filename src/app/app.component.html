@@ -1,15 +1,16 @@
 <mat-sidenav-container class="example-container">
-  <mat-sidenav id="si" mode="side" opened
+  <mat-sidenav id="si" mode="side" [opened]="navState"
     >Sidenav content
+    <span class="position-absolute bottom-0 start-0 m-3">Ismail IYADA</span>
   </mat-sidenav>
-  <mat-sidenav-content id="ma">
+  <mat-sidenav-content >
     <div
       class="container text-center chartContainer"
       style="margin: 0 auto; width: 98%"
     >
       <app-selectservice></app-selectservice>
 
-      <div class="row" style="height: 100%">
+      <div class="row">
         <div class="col-xxl-6">
           <app-charts chartType="bar"></app-charts>
         </div>
