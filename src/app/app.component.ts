@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, HostListener} from '@angular/core';
 import {MatIconModule} from '@angular/material/icon';
 
 /** @title Basic sidenav */
@@ -8,10 +8,19 @@ import {MatIconModule} from '@angular/material/icon';
   styleUrls: ['./app.component.css'],
 
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
   title = 'csa';
   navState : string = "";
   ngOnInit() {
+    this.updateNavState();
+  }
+
+  @HostListener('window:resize')
+  onResize() {
+    this.updateNavState();
+  }
+
+  private updateNavState() {
     this.navState = window.innerWidth > 768 ? 'true' : 'false';
   }
 }
